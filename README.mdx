@@ -1,0 +1,49 @@
+# BUAA-Automatic-Control-Components-Sp2024
+
+BUAA 2024 年春《自动控制元件》课程实验报告和作业。
+
+## 项目结构
+
+### 编译产物
+
+最终的实验报告和作业 PDF 文件位于项目根目录下，可以直接查看。
+
+### 源码
+
+- [实验](./实验/) 文件夹中存放的是实验报告的源码。
+- [作业](./作业/) 文件夹中存放的是作业的源码。
+
+### 从源码编译
+
+本项目所有实验报告和作业均使用 [Typst](https://typst.app/)。另外，你还需要有 Python 3.11+ 环境，并安装 `matplotib` 和 `numpy`。
+
+1. 生成 `实验/dist` 中的 svg
+    ```bash
+    cd 实验
+
+    python3 plot1.py
+    python3 plot2.py
+    python3 plot3.py
+    python3 plot5.py
+    python3 plot7.py
+    ```
+2. 生成 PDF
+   ```bash
+   cd ..
+
+   typst compile 实验/1.typ 实验一.pdf
+   typst compile 实验/2.typ 实验二.pdf
+   typst compile 实验/3.typ 实验三.pdf
+   typst compile 实验/4.typ 实验四.pdf
+   typst compile 实验/5.typ 实验五.pdf
+   typst compile 实验/6.typ 实验六.pdf
+   typst compile 实验/7.typ 实验七.pdf
+
+   typst compile 作业/5.typ 作业五.pdf
+   ```
+
+## 你可能还会喜欢的
+
+- [基础物理实验 II](https://github.com/OverflowCat/BUAA-Phy-Expt-Sp2023)
+- [误差理论与数据处理](https://github.com/OverflowCat/BUAA-Data-and-Error-Analysis-Sp2024)
+- [数字图像处理](https://github.com/OverflowCat/BUAA-Digital-Image-Processing-Sp2024)
