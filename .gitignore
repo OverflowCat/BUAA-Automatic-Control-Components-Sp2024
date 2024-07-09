@@ -1,3 +1,4 @@
-*.pdf
 *.svg
 dist
+htm
+typ
